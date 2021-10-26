@@ -1,0 +1,33 @@
+Download node.js and Visual studio code.
+Create a folder, name the folder what you want it.
+Open Cmd prompt, type cd desktop, then type again cd {folder name}
+and then do npm init, then press enter 9 times.
+now, hit the yes button.
+later install npm i discord.js
+now open visual studio code.
+
+go to file, open new folder, locate the folder you just create.
+make a file call index.js at the folder at visual studio code.
+
+now copy downwards 
+const Discord = require ('discord.js')
+const { execute } = require('./clear')
+const client = new Discord.Client({
+    allowedMentions: {
+        parse: ['users', 'roles'],
+        repliedUser: true,
+    },
+    intents: [
+        "GUILDS",
+        "GUILD_MESSAGES",
+        "GUILD_PRESENCES",
+        "GUILD_MEMBERS",
+        "GUILD_MESSAGE_REACTIONS"
+    ],
+})
+
+client.on('ready', () => {
+    console.log("started")
+
+
+next episode will talk about how to make it online and status.
